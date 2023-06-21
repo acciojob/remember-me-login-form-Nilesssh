@@ -1,8 +1,9 @@
 let checkbox = document.querySelector("#checkbox");
 let name = document.querySelector("#username");
+let form = document.querySelector("form")
 let password = document.querySelector("#password");
-checkbox.addEventListener("change",function(){
-    if(this.checked){
+form.addEventListener("submit",function(){
+    if(checkbox.checked){
         if(name && password){
             localStorage.setItem("name",username.value);
             localStorage.setItem("password",password.value);
